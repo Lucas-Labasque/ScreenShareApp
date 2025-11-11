@@ -2,12 +2,16 @@
 using System.Diagnostics;
 using SkiaSharp;
 using System.Diagnostics;
+using System.Data;
 
 
 namespace ScreenShareApp
 {
     public partial class Form1 : Form
     {
+        private string _role;
+
+
         TcpClient? clientLucas;
         TcpClient? clientValentin;
         NetworkStream? streamLucas;
@@ -19,14 +23,28 @@ namespace ScreenShareApp
         Thread? threadSendLucas;
         Thread? threadReceiveValentin;
 
-        public Form1()
+        public Form1(string role)
         {
             InitializeComponent();
+            _role = role;
         }
 
         #region load
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (_role == "HOST")
+            {
+                lblStatusLucas.Text = "Vous êtes Lucas (partage)";
+                btnShareLucas.Enabled = true;
+                btnShareValentin.Enabled = false;
+            }
+            else
+            {
+                lblStatusValentin.Text = "Vous êtes Valentin (visionnage)";
+                btnShareLucas.Enabled = false;
+                btnShareValentin.Enabled = true;
+            }
+
             BringUiToFront();
 
             // reposition dynamique à chaque redimensionnement
@@ -291,34 +309,57 @@ namespace ScreenShareApp
             return skBmp;
         }
 
-        private void btnConnect_Click(object sender, EventArgs e)
+        private async void btnConnect_Click(object sender, EventArgs e)
         {
             string ip = txtIp.Text.Trim();
             int port = (int)numPort.Value;
 
             try
             {
-                clientValentin = new TcpClient(ip, port);
-                streamValentin = clientValentin.GetStream();
+                lblStatusValentin.Text = "⏳ Connexion en cours...";
+                btnConnect.Enabled = false;
 
-                using (var writer = new StreamWriter(streamValentin, leaveOpen: true))
+                await Task.Run(() =>
                 {
-                    writer.WriteLine("VIEWER");
-                    writer.Flush();
-                }
+                    clientValentin = new TcpClient(ip, port);
+                    streamValentin = clientValentin.GetStream();
+
+                    using (var writer = new StreamWriter(streamValentin, leaveOpen: true))
+                    {
+                        writer.WriteLine("VIEWER");
+                        writer.Flush();
+                    }
+                });
 
                 lblStatusValentin.Text = $"✅ Connecté à {ip}:{port}";
+                lblStatusValentin.ForeColor = Color.LightGreen;
+
                 isSharingValentin = true;
 
-                threadReceiveValentin = new Thread(ReceiveLoopValentin);
-                threadReceiveValentin.IsBackground = true;
+                threadReceiveValentin = new Thread(ReceiveLoopValentin)
+                {
+                    IsBackground = true
+                };
                 threadReceiveValentin.Start();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("❌ Erreur de connexion : " + ex.Message);
+                lblStatusValentin.Text = "❌ Connexion échouée";
+                lblStatusValentin.ForeColor = Color.IndianRed;
+
+                MessageBox.Show(
+                    $"Impossible de se connecter à {ip}:{port}\n\nDétail : {ex.Message}",
+                    "Erreur de connexion",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+            finally
+            {
+                btnConnect.Enabled = true;
             }
         }
+
 
     }
 }
