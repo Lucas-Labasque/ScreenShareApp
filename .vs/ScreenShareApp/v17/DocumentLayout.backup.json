@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|c:\\users\\lbsql\\documents\\valentin\\screenshare\\screenshareapp\\screenshareapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|c:\\users\\lbsql\\documents\\valentin\\screenshare\\screenshareapp\\screenshareapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|c:\\users\\lbsql\\documents\\valentin\\screenshare\\screenshareapp\\screenshareapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|c:\\users\\lbsql\\documents\\valentin\\screenshare\\screenshareapp\\screenshareapp\\roleselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\roleselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\screenshareapp\\roleselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\roleselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|c:\\users\\lbsql\\documents\\valentin\\screenshare\\screenshareapp\\screenshareapp\\roleselectform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\roleselectform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\screenshareapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|solutionrelative:screenshareapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B29D06A4-6A36-4F1A-BE21-DBD0497396B0}|ScreenShareApp\\ScreenShareApp.csproj|c:\\users\\lbsql\\documents\\valentin\\screenshare\\screenshareapp\\screenshareapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,14 +59,62 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\Program.cs",
+              "RelativeDocumentMoniker": "ScreenShareApp\\Program.cs",
+              "ToolTip": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\Program.cs",
+              "RelativeToolTip": "ScreenShareApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:11:03.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleSelectForm.cs",
+              "DocumentMoniker": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\RoleSelectForm.cs",
+              "RelativeDocumentMoniker": "ScreenShareApp\\RoleSelectForm.cs",
+              "ToolTip": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\RoleSelectForm.cs",
+              "RelativeToolTip": "ScreenShareApp\\RoleSelectForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:10:48.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoleSelectForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\RoleSelectForm.Designer.cs",
+              "RelativeDocumentMoniker": "ScreenShareApp\\RoleSelectForm.Designer.cs",
+              "ToolTip": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\RoleSelectForm.Designer.cs",
+              "RelativeToolTip": "ScreenShareApp\\RoleSelectForm.Designer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:10:05.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoleSelectForm.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\RoleSelectForm.cs",
+              "RelativeDocumentMoniker": "ScreenShareApp\\RoleSelectForm.cs",
+              "ToolTip": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\RoleSelectForm.cs [Conception]",
+              "RelativeToolTip": "ScreenShareApp\\RoleSelectForm.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:09:59.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\Form1.cs",
               "RelativeDocumentMoniker": "ScreenShareApp\\Form1.cs",
               "ToolTip": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\Form1.cs [Conception]",
               "RelativeToolTip": "ScreenShareApp\\Form1.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T18:28:14.211Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2025-11-11T18:28:14.211Z"
             },
             {
               "$type": "Document",
@@ -60,14 +124,13 @@
               "RelativeDocumentMoniker": "ScreenShareApp\\Form1.cs",
               "ToolTip": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\Form1.cs",
               "RelativeToolTip": "ScreenShareApp\\Form1.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwEEBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T18:03:59.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T18:03:59.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\lbsql\\Documents\\Valentin\\screenshare\\ScreenShareApp\\ScreenShareApp\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "ScreenShareApp\\Form1.Designer.cs",
@@ -75,8 +138,7 @@
               "RelativeToolTip": "ScreenShareApp\\Form1.Designer.cs",
               "ViewState": "AgIAAM8AAAAAAAAAAAAuwNIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T17:39:42.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T17:39:42.732Z"
             }
           ]
         },

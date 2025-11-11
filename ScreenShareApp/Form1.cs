@@ -80,7 +80,7 @@ namespace ScreenShareApp
 
 
         // 🎥 === PARTAGE ÉCRAN LUCAS ===
-        private void btnShareLucas_Click(object sender, EventArgs e)
+        private async Task btnShareLucas_ClickAsync(object sender, EventArgs e)
         {
             if (isSharingLucas)
             {
@@ -97,11 +97,13 @@ namespace ScreenShareApp
                 streamLucas = clientLucas.GetStream();
                 clientLucas.NoDelay = true;
 
-                using (var writer = new StreamWriter(streamLucas, leaveOpen: true))
+                using (var writer = new StreamWriter(streamLucas, System.Text.Encoding.ASCII, 1024, leaveOpen: true))
                 {
-                    streamLucas.Write(System.Text.Encoding.ASCII.GetBytes("HOST"));
-                    streamLucas.Flush();
+                    writer.WriteLine("HOST");
+                    writer.Flush();
                 }
+                await Task.Delay(200); 
+
 
                 isSharingLucas = true;
                 lblStatusLucas.Text = "📡 Partage en cours...";
@@ -126,7 +128,8 @@ namespace ScreenShareApp
                     return;
                 }
 
-                using var writer = new BinaryWriter(streamLucas);
+                var writer = new BinaryWriter(streamLucas, System.Text.Encoding.Default, leaveOpen: true);
+
                 clientLucas.NoDelay = true;
 
                 byte[]? lastFrame = null;
@@ -176,6 +179,7 @@ namespace ScreenShareApp
 
                                 try
                                 {
+                                    if (buffer.Length == 0) continue;
                                     writer.Write(buffer.Length);
                                     writer.Write(buffer);
                                     writer.Flush();
@@ -208,7 +212,7 @@ namespace ScreenShareApp
 
 
         // 👁️ === AFFICHAGE ÉCRAN VALENTIN ===
-        private void btnShareValentin_Click(object sender, EventArgs e)
+        private async Task btnShareValentin_ClickAsync(object sender, EventArgs e)
         {
             if (isSharingValentin)
             {
@@ -225,12 +229,13 @@ namespace ScreenShareApp
                 clientValentin.NoDelay = true;
 
 
-                using (var writer = new StreamWriter(streamValentin, leaveOpen: true))
+                using (var writer = new StreamWriter(streamValentin, System.Text.Encoding.ASCII, 1024, leaveOpen: true))
                 {
-                    streamValentin.Write(System.Text.Encoding.ASCII.GetBytes("VIEW"));
-                    streamValentin.Flush();
-
+                    writer.WriteLine("VIEW");
+                    writer.Flush();
                 }
+                await Task.Delay(200); // pour laisser le serveur lire avant réception
+
 
                 isSharingValentin = true;
                 lblStatusValentin.Text = "👁️ Réception en cours...";

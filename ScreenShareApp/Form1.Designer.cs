@@ -83,7 +83,7 @@
             btnShareLucas.TabIndex = 0;
             btnShareLucas.Text = "Partager écran (Lucas)";
             btnShareLucas.UseVisualStyleBackColor = false;
-            btnShareLucas.Click += btnShareLucas_Click;
+            btnShareLucas.Click += btnShareLucas_ClickAsync;
             // 
             // lblStatusLucas
             // 
@@ -119,7 +119,7 @@
             btnShareValentin.TabIndex = 0;
             btnShareValentin.Text = "Partager écran (Valentin)";
             btnShareValentin.UseVisualStyleBackColor = false;
-            btnShareValentin.Click += btnShareValentin_Click;
+            btnShareValentin.Click += btnShareValentin_ClickAsync;
             // 
             // lblStatusValentin
             // 
